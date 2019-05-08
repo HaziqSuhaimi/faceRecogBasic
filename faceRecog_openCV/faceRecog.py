@@ -27,8 +27,8 @@ video_capture = cv2.VideoCapture(0)
 print("Loading model...  Please wait ")
 
 # Load a sample picture and learn how to recognize it.
-koqi_image = face_recognition.load_image_file("faces/koqi.jpg")
-koqi_face_encoding = face_recognition.face_encodings(koqi_image)[0]
+obama_image = face_recognition.load_image_file("faces/obama.jpg")
+obama_face_encoding = face_recognition.face_encodings(obama_image)[0]
 
 # Load a second sample picture and learn how to recognize it.
 #biden_image = face_recognition.load_image_file("faces/biden.jpg")
@@ -36,11 +36,11 @@ koqi_face_encoding = face_recognition.face_encodings(koqi_image)[0]
 
 # Create arrays of known face encodings and their names
 known_face_encodings = [
-    koqi_face_encoding
+    obama_face_encoding
     #biden_face_encoding
 ]
 known_face_names = [
-    "Koqi"
+    "Obama"
     #"Joe Biden"
 ]
 
