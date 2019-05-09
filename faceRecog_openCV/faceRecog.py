@@ -128,8 +128,8 @@ while True:
                     imgPath = time+".jpg"
                     #time.sleep(0.5)
                     cv2.imwrite(imgPath,frame)
-                    gmail = GMail("havockq@gmail.com","flplglyivbjrprku")
-                    msg = Message("From Your Door",to="kgv1805@gmail.com",text="We captured this person in front of your door at " + time ,attachments = [imgPath])
+                    gmail = GMail("sender@gmail.com","your-gmail-app-password")
+                    msg = Message("From Your Door",to="receiver@gmail.com",text="We captured this person in front of your door at " + time ,attachments = [imgPath])
                     gmail.send(msg)
                     ukTimes = 0
 
